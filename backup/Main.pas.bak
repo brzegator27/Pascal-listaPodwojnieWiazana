@@ -20,7 +20,7 @@ var newP : ElementP;
 begin
   new(newP);
   //Prosimy uzytkownika o podanie Nr:
-  Write('Podaj numer obiektu ktory ma zostac wyszukany:');
+  Write('Podaj numer obiektu ktory ma zostac dodany:');
   Readln(Nr);
 
   newP^.Nr := Nr;
@@ -138,7 +138,7 @@ begin
       case (coZrobic) of
       1: poczatek := dodaj(poczatkowy, NIL, 0);
       2: wypisz(poczatkowy);
-      3: usun(szukaj(poczatek, 0));
+      3: usun(szukaj(poczatek, ));
       4: dodaj(szukaj(poczatek, 0), NIL, 0);
       end;
     end;
